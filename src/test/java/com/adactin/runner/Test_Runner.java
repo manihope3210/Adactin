@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,8 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @CucumberOptions(features = "src//test//java//com//adactin//feature", glue = "com.adactin.stepdefinition", monochrome = true, dryRun = false, strict = true, plugin = {
 		"html:Reports/Html_Report", "pretty", "json:Reports/Json_Report.json",
 		"com.cucumber.listener.ExtentCucumberFormatter:reports/Extent_Report.html" })
-
-public class RunnerClass {
+public class Test_Runner {
 
 	public static WebDriver driver;
 
@@ -33,5 +31,4 @@ public class RunnerClass {
 		driver.close();
 
 	}
-
 }

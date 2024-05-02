@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.adactin.runner.RunnerClass;
+import com.adactin.runner.Test_Runner;
+import com.adactin.runner.Test_Runner;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,7 +14,7 @@ import cucumber.api.java.en.When;
 
 public class StepDefinition {
 
-	public static WebDriver driver = RunnerClass.driver;
+	public static WebDriver driver = Test_Runner.driver;
 
 	@Given("^user Launch The Adactin Application$")
 	public void user_Launch_The_Adactin_Application() throws Throwable {
